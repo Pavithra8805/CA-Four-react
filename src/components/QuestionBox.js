@@ -16,14 +16,10 @@ function QuestionBox(props) {
     }
   };
 
-  // const toggleHighlight = () => {
-  //   sethighlight(!highlight);
-  // };
   const highlightText = () => {
     sethighlight(true);
   };
 
-  // Function to remove the highlight and allow it to toggle back
   const removeHighlight = () => {
     sethighlight(false);
   };

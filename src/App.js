@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
 import questions from "./questions";
-import Result from "./components/Result";
 import QuestionBox from "./components/QuestionBox";
 
 
@@ -14,7 +13,7 @@ function App() {
   };
 
   return (
-    <div className={`main ${lightMode ? "light" : "dark"}`}>
+    <>
       <div className="title">
         <div className="title-container">
           <h1>Quiz App</h1>
@@ -24,7 +23,7 @@ function App() {
         </div>
       </div>
       <QuestionBox data={questions} />
-    </div>
+    </>
   );
 }
 
